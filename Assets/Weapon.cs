@@ -7,9 +7,11 @@ public class Weapon : MonoBehaviour {
     public float dmg = 5;
     public float range = 100;
     public LayerMask whatToHit;
-
+    
     float timeToFire = 0;
     Transform firePoint;
+
+    public GameObject arrow;
 
 	// Use this for initialization
 	void Awake () 
@@ -24,7 +26,7 @@ public class Weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        Shoot();
+        
         if (fireRate == 0)
         {
             if (Input.GetButtonDown("Fire1"))
@@ -50,5 +52,6 @@ public class Weapon : MonoBehaviour {
         {
             Debug.DrawLine(firePointPosition, hit.point, Color.red);
         }
+        Instantiate(arrow, firePointPosition, firePoint.rotation);
     }
 }
