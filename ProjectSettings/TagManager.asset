@@ -6,6 +6,20 @@ TagManager:
   tags:
   - GM
   - spawnPoint
+  - Slot
+  - Slots
+  - Hotbar
+  - CraftSystem
+  - ResultSlot
+  - DraggingItem
+  - Panel
+  - Item
+  - Canvas
+  - ItemIcon
+  - Tooltip
+  - EventSystem
+  - EquipmentSystem
+  - MainInventory
   layers:
   - Default
   - TransparentFX

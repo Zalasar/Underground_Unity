@@ -256,6 +256,7 @@ MonoBehaviour:
   whatToHit:
     serializedVersion: 2
     m_Bits: 4294967035
+  arrow: {fileID: 0}
 --- !u!212 &21231090
 SpriteRenderer:
   m_ObjectHideFlags: 1
