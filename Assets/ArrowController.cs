@@ -8,13 +8,15 @@ public class ArrowController : MonoBehaviour {
     public float fallBoundry = -20;
 
     public Rigidbody2D rb;
-	void Start () {
-	
-	}
+	void Start ()
+    {
+        rb.velocity = new Vector2(speed * rb.velocity.x, speed * rb.velocity.y);
+    }
 	
 	void Update ()
     {
-        rb.velocity = new Vector2(speed, rb.velocity.y);
+
+        
         if (rb.position.y <= fallBoundry)
         {
             Destroy(gameObject);

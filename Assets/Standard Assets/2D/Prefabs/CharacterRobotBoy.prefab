@@ -344,6 +344,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967035
   arrow: {fileID: 185074, guid: 90f2d1d91be7c934bae0fc967fee4639, type: 2}
+  arrowBody: {fileID: 0}
 --- !u!114 &11447952
 MonoBehaviour:
   m_ObjectHideFlags: 1
