@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class Enemy : MonoBehaviour {
-
-	//[System.Serializable]
+    float currentHealth = 10;
+    float maxHealth = 100;
+//	[System.Serializable]
  //   public class EnemyStats
  //   {
  //       public int Health = 100;
@@ -18,4 +19,19 @@ public class Enemy : MonoBehaviour {
  //           GameMaster.KillEnemy(this);
  //       }
  //   }
+ public void Awake()
+    {
+        currentHealth = maxHealth;
+    }
+ public void Update()
+    {
+        if (currentHealth <=0)
+        {
+            Destroy(gameObject);
+        }
+    }
+ public void Damage(int damage)
+    {
+        currentHealth -= damage;
+    }
 }

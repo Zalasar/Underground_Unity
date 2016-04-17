@@ -20,6 +20,7 @@ TagManager:
   - EventSystem
   - EquipmentSystem
   - MainInventory
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -22,9 +22,10 @@ public class ArrowController : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-    void OnTriggerEnter2D(Collider2D col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        col.SendMessageUpwards("Damage", damage);
+        other.SendMessageUpwards("Damage", damage);
         Destroy(gameObject);
+        //Destroy(other.gameObject);
     }
 }
