@@ -60,3 +60,41 @@ MonoBehaviour:
     indexItemInList: 999
     rarity: 1
     itemAttributes: []
+  - itemName: Wood
+    itemID: 4
+    itemDesc: for crafting
+    itemIcon: {fileID: 21300000, guid: 1ff95f2299e75ce4c9449ae93d394b71, type: 3}
+    itemModel: {fileID: 0}
+    itemValue: 1
+    itemType: 12
+    itemWeight: 0
+    maxStack: 10
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: Iron
+    itemID: 5
+    itemDesc: for more crafting
+    itemIcon: {fileID: 21300000, guid: 0626b924325d1c34cafa6b22297f4e4f, type: 3}
+    itemModel: {fileID: 0}
+    itemValue: 1
+    itemType: 12
+    itemWeight: 0
+    maxStack: 10
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: Sword
+    itemID: 6
+    itemDesc: for hitting
+    itemIcon: {fileID: 21300000, guid: cd0b66ad2c7f7a040ad5f9f707edaf19, type: 3}
+    itemModel: {fileID: 0}
+    itemValue: 1
+    itemType: 1
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Dammage
+      attributeValue: 0

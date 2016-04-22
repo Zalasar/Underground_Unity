@@ -14,12 +14,12 @@ MonoBehaviour:
   itemAttributeList:
   - attributeName: 41726d6f72
     attributeValue: 0
-  - attributeName: 4865616c7468
-    attributeValue: 0
+  - attributeName: Dammage
+    attributeValue: 10
   - attributeName: 4d616e61
     attributeValue: 0
-  - attributeName: 41726d6f72
-    attributeValue: 0
+  - attributeName: Health
+    attributeValue: 30
   - attributeName: 44616d616765
     attributeValue: 0
   - attributeName: 536c6f7473

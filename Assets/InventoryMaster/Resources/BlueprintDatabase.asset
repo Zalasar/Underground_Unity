@@ -46,3 +46,22 @@ MonoBehaviour:
       itemAttributes: []
     amountOfFinalItem: 1
     timeToCraft: 0
+  - ingredients: 0400000005000000
+    amount: 0100000001000000
+    finalItem:
+      itemName: Sword
+      itemID: 6
+      itemDesc: for hitting
+      itemIcon: {fileID: 0}
+      itemModel: {fileID: 0}
+      itemValue: 1
+      itemType: 0
+      itemWeight: 0
+      maxStack: 1
+      indexItemInList: 999
+      rarity: 0
+      itemAttributes:
+      - attributeName: Dammage
+        attributeValue: 0
+    amountOfFinalItem: 0
+    timeToCraft: 0
