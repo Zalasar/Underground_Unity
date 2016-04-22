@@ -29,13 +29,15 @@ MonoBehaviour:
     itemDesc: it's an apple
     itemIcon: {fileID: 21300000, guid: eb5f6e2757c821940b69cf1456f7865a, type: 3}
     itemModel: {fileID: 0}
-    itemValue: 1
+    itemValue: 3
     itemType: 2
     itemWeight: 0
     maxStack: 10
     indexItemInList: 999
     rarity: 1
-    itemAttributes: []
+    itemAttributes:
+    - attributeName: 41726d6f72
+      attributeValue: 0
   - itemName: Bottle
     itemID: 2
     itemDesc: it's a bottle
