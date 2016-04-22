@@ -35,9 +35,7 @@ MonoBehaviour:
     maxStack: 10
     indexItemInList: 999
     rarity: 1
-    itemAttributes:
-    - attributeName: 41726d6f72
-      attributeValue: 0
+    itemAttributes: []
   - itemName: Bottle
     itemID: 2
     itemDesc: it's a bottle
