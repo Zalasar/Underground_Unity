@@ -127,6 +127,45 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90f2d1d91be7c934bae0fc967fee4639, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &184597105
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 184597107}
+  - 114: {fileID: 184597106}
+  m_Layer: 0
+  m_Name: LootManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &184597106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184597105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d3d779a27cef3a48a77517b9cebc472, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &184597107
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 184597105}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.3645554, y: 1.2655667, z: 0}
+  m_LocalScale: {x: 1.1011548, y: 1.1011548, z: 1.1011548}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
 --- !u!1001 &294370947
 Prefab:
   m_ObjectHideFlags: 0
@@ -172,6 +211,52 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df8c16b933ac9e4396647b2abeacd4d, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1001 &734025488
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.3645554
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.2655667
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11494140, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: lootSpawner
+      value: 
+      objectReference: {fileID: 184597106}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1107121796
 GameObject:

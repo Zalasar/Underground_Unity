@@ -16,7 +16,7 @@ MonoBehaviour:
     itemID: 0
     itemDesc: 496620796f75206472696e6b2074686973206e69636520626f74746c6520796f752077696c6c2067657420736f6d65206865616c7468206261636b2e0a0a2b203230204865616c7468
     itemIcon: {fileID: 0}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 125176, guid: 724269244de23ad40b09e7d198340597, type: 2}
     itemValue: 1
     itemType: 2
     itemWeight: 0
@@ -28,7 +28,7 @@ MonoBehaviour:
     itemID: 1
     itemDesc: it's an apple
     itemIcon: {fileID: 21300000, guid: eb5f6e2757c821940b69cf1456f7865a, type: 3}
-    itemModel: {fileID: 0}
+    itemModel: {fileID: 125176, guid: 724269244de23ad40b09e7d198340597, type: 2}
     itemValue: 3
     itemType: 2
     itemWeight: 0
