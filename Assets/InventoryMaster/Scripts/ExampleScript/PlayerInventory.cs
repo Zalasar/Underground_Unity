@@ -284,7 +284,15 @@ public class PlayerInventory : MonoBehaviour
     }
 
 
-
+    public void Damage(float damage)
+    {
+        currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Debug.Log("KILL PLAYER");
+            Destroy(gameObject);
+        }
+    }
     // Update is called once per frame
     void Update()
     {

@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
     [System.Serializable]
     public class PlayerStats
     {
-        public int Health = 100;
+        public float Health = 100;
 
     }
     public PlayerStats playerStats = new PlayerStats();
@@ -16,10 +16,12 @@ public class Player : MonoBehaviour
     {
         if(transform.position.y <= fallBoundary)
         {
-            DamagePlayer(999999);
+            Damage(999999);
         }
     }
-    public void DamagePlayer (int damage)
+
+    
+    public void Damage(float damage)
     {
         playerStats.Health -= damage;
         if (playerStats.Health <= 0)
