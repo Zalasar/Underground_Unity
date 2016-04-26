@@ -25,7 +25,7 @@ public class PlayerInventory : MonoBehaviour
 
     float maxHealth = 100;
     float maxMana = 100;
-    float maxDamage = 0;
+    float maxDamage = 20;
     float maxArmor = 0;
 
     public float currentHealth = 60;
@@ -233,6 +233,7 @@ public class PlayerInventory : MonoBehaviour
                 else
                     currentDamage += item.itemAttributes[i].attributeValue;
             }
+            Debug.Log("health = " + currentHealth);
         }
         //if (HPMANACanvas != null)
         //{
@@ -253,6 +254,7 @@ public class PlayerInventory : MonoBehaviour
                 maxArmor += item.itemAttributes[i].attributeValue;
             if (item.itemAttributes[i].attributeName == "Damage")
                 maxDamage += item.itemAttributes[i].attributeValue;
+            Debug.Log("attack = " + maxDamage);
         }
         //if (HPMANACanvas != null)
         //{
