@@ -25,7 +25,7 @@ public class PlayerInventory : MonoBehaviour
 
     float maxHealth = 100;
     float maxMana = 100;
-    float maxDamage = 20;
+    public float maxDamage = 0;
     float maxArmor = 0;
 
     public float currentHealth = 60;

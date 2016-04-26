@@ -13,7 +13,7 @@ public class Weapon : MonoBehaviour {
 
     public GameObject arrow;
     public Rigidbody2D arrowBody;
-
+    
 	// Use this for initialization
 	void Awake () 
     {
@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        
+        dmg = PlayerInventory.
         if (fireRate == 0)
         {
             if (Input.GetButtonDown("Fire1"))
