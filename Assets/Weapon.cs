@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
     {
-        dmg = PlayerInventory.
+       // dmg = PlayerInventory.
         if (fireRate == 0)
         {
             if (Input.GetButtonDown("Fire1"))

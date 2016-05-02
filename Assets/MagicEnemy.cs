@@ -20,17 +20,17 @@ public class MagicEnemy : MonoBehaviour
         //    Debug.DrawLine(firePointPosition, hit.point, Color.red);
         //}
         
-        if (X - Player.X < 0)
-        {
-            if (Player.distance from enemy < 100)
-            {
-                //Shoot left
-            }
-        }
-        if (X - Player.X > 0)
-        {
+        //if (X - Player.X < 0)
+        //{
+        //    if (Player.distance from enemy < 100)
+        //    {
+        //        //Shoot left
+        //    }
+        //}
+        //if (X - Player.X > 0)
+        //{
 
-        }
+        //}
         
     }
     public void Awake()
