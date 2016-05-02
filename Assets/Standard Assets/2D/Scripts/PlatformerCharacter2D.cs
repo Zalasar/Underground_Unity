@@ -98,17 +98,17 @@ namespace UnityStandardAssets._2D
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
             //####UNDERGROUND EDITS####
-            Vector2 mousePosition = new Vector2
-            (Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
-            Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
-            if (m_FacingRight && mousePosition.x < m_Rigidbody2D.position.x)
-            {
-                Flip();
-            }
-            else if(!m_FacingRight && mousePosition.x > m_Rigidbody2D.position.x)
-            {
-                Flip();
-            }
+            //Vector2 mousePosition = new Vector2
+            //(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
+            //Camera.main.ScreenToWorldPoint(Input.mousePosition).y);
+            //if (m_FacingRight && mousePosition.x < m_Rigidbody2D.position.x)
+            //{
+            //    Flip();
+            //}
+            //else if (!m_FacingRight && mousePosition.x > m_Rigidbody2D.position.x)
+            //{
+            //    Flip();
+            //}
             //####UNDERGROUND EDITS END####
         }
 
