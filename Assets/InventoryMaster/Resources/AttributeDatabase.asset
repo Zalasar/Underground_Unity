@@ -14,7 +14,7 @@ MonoBehaviour:
   itemAttributeList:
   - attributeName: 41726d6f72
     attributeValue: 0
-  - attributeName: Dammage
+  - attributeName: Damage
     attributeValue: 10
   - attributeName: 4d616e61
     attributeValue: 0
