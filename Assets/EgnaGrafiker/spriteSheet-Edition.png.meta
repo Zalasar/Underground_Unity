@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 15efef526e4f8494987b44006254adba
-timeCreated: 1462220921
+timeCreated: 1462222390
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -155,18 +155,18 @@ TextureImporter:
         y: 2539
         width: 172
         height: 562
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.49116695, y: -0.20498386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
-      - - {x: -31.047974, y: 180.55396}
-        - {x: -55.047974, y: 138.55396}
-        - {x: -55.047974, y: -123.446045}
-        - {x: -36.047974, y: -180.44604}
-        - {x: 18.952026, y: -180.44604}
-        - {x: 55.952026, y: -131.44604}
-        - {x: 55.952026, y: 76.553955}
-        - {x: 31.952026, y: 180.55396}
+      - - {x: -30.072632, y: 434.91748}
+        - {x: -54.07263, y: 392.91748}
+        - {x: -54.07263, y: 130.91748}
+        - {x: -35.07263, y: 73.91748}
+        - {x: 19.927368, y: 73.91748}
+        - {x: 56.92737, y: 122.91748}
+        - {x: 56.92737, y: 330.91748}
+        - {x: 32.92737, y: 434.91748}
     - name: spriteSheet-Edition_5
       rect:
         serializedVersion: 2
