@@ -122,7 +122,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 476918, guid: 90f2d1d91be7c934bae0fc967fee4639, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90f2d1d91be7c934bae0fc967fee4639, type: 2}
@@ -203,11 +203,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 405734, guid: 6df8c16b933ac9e4396647b2abeacd4d, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 148276, guid: 6df8c16b933ac9e4396647b2abeacd4d, type: 2}
       propertyPath: m_Name
       value: Hero
+      objectReference: {fileID: 0}
+    - target: {fileID: 21251198, guid: 6df8c16b933ac9e4396647b2abeacd4d, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df8c16b933ac9e4396647b2abeacd4d, type: 2}
@@ -249,7 +253,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 404028, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11494140, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
       propertyPath: lootSpawner
