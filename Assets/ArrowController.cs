@@ -6,7 +6,8 @@ public class ArrowController : MonoBehaviour {
 
     public float speed;
     public float fallBoundry = -20;
-
+    public float Timer = 2;
+    
     public Rigidbody2D rb;
 	void Start ()
     {
@@ -15,17 +16,25 @@ public class ArrowController : MonoBehaviour {
 	
 	void Update ()
     {
-
-        
-        if (rb.position.y <= fallBoundry)
+        Timer -= Time.deltaTime;
+        if (Timer <= 0)
         {
             Destroy(gameObject);
+            Timer = 2;
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        other.SendMessageUpwards("Damage", damage);
-        Destroy(gameObject);
+        if (other.tag == "Enemy")
+        {
+            other.SendMessageUpwards("Damage", damage);
+            Destroy(gameObject);
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         //Destroy(other.gameObject);
     }
 }
