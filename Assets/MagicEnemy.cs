@@ -6,6 +6,7 @@ public class MagicEnemy : MonoBehaviour
     float currentHealth = 10;
     float maxHealth = 100;
     float damage = 10;
+    public Transform target;
 
     public void MagicDmg()
     {
@@ -13,32 +14,27 @@ public class MagicEnemy : MonoBehaviour
     }
     public void Shoot()
     {
-        //RaycastHit2D hit = Physics2D.Raycast(X-firePointPosition, mousePosition - firePointPosition, range, whatToHit);
-        //Debug.DrawLine(firePointPosition, (mousePosition - firePointPosition) * 100, Color.yellow);
-        //if (hit.collider != null)
-        //{
-        //    Debug.DrawLine(firePointPosition, hit.point, Color.red);
-        //}
-        
-        //if (X - Player.X < 0)
+        //if (self - target < 10)
         //{
         //    if (Player.distance from enemy < 100)
         //    {
         //        //Shoot left
         //    }
+        //    if (Player.distance from enemy > 100)
+        //    {
+        //        //Shoot right
+        //    }
         //}
-        //if (X - Player.X > 0)
-        //{
-
-        //}
-        
     }
     public void Awake()
     {
         currentHealth = maxHealth;
+        GetComponent("Target radius");
     }
     public void Update()
     {
+        //shoot trigger child circlecollider
+        
         if (currentHealth <= 0)
         {
             Destroy(gameObject);
