@@ -28,7 +28,7 @@ public class PlayerInventory : MonoBehaviour
     public float maxDamage = 0;
     float maxArmor = 0;
 
-    public float currentHealth = 60;
+    public float currentHealth = 100;
     float currentMana = 100;
     float currentDamage = 0;
     float currentArmor = 0;
@@ -155,20 +155,21 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    void Start()
+    void Awake()
     {
-        //if (HPMANACanvas != null)
-        //{
-        //    hpText = HPMANACanvas.transform.GetChild(1).GetChild(0).GetComponent<Text>();
+        if (HPMANACanvas != null)
+        {
+            hpText = HPMANACanvas.transform.GetChild(1).GetChild(0).GetComponent<Text>();
+            hpImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
+            UpdateHPBar();
 
-        //    manaText = HPMANACanvas.transform.GetChild(2).GetChild(0).GetComponent<Text>();
 
-        //    hpImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
-        //    manaImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
+            manaText = HPMANACanvas.transform.GetChild(2).GetChild(0).GetComponent<Text>();
+            manaImage = HPMANACanvas.transform.GetChild(1).GetComponent<Image>();
+            UpdateManaBar();
 
-        //    UpdateHPBar();
-        //    UpdateManaBar();
-        //}
+            
+        }
 
         if (inputManagerDatabase == null)
             inputManagerDatabase = (InputManager)Resources.Load("InputManager");
@@ -186,19 +187,19 @@ public class PlayerInventory : MonoBehaviour
             craftSystemInventory = craftSystem.GetComponent<Inventory>();
     }
 
-    //void UpdateHPBar()
-    //{
-    //    hpText.text = (currentHealth + "/" + maxHealth);
-    //    float fillAmount = currentHealth / maxHealth;
-    //    hpImage.fillAmount = fillAmount;
-    //}
+    void UpdateHPBar()
+    {
+        float fillAmount = currentHealth / maxHealth;
+        hpImage.fillAmount = fillAmount;
+        hpText.text = (currentHealth + "/" + maxHealth);
+    }
 
-    //void UpdateManaBar()
-    //{
-    //    manaText.text = (currentMana + "/" + maxMana);
-    //    float fillAmount = currentMana / maxMana;
-    //    manaImage.fillAmount = fillAmount;
-    //}
+    void UpdateManaBar()
+    {
+        manaText.text = (currentMana + "/" + maxMana);
+        float fillAmount = currentMana / maxMana;
+        manaImage.fillAmount = fillAmount;
+    }
 
 
     public void OnConsumeItem(Item item)
@@ -235,11 +236,11 @@ public class PlayerInventory : MonoBehaviour
             }
             Debug.Log("health = " + currentHealth);
         }
-        //if (HPMANACanvas != null)
-        //{
-        //    UpdateManaBar();
-        //    UpdateHPBar();
-        //}
+        if (HPMANACanvas != null)
+        {
+            UpdateManaBar();
+            UpdateHPBar();
+        }
     }
 
     public void OnGearItem(Item item)
@@ -256,11 +257,11 @@ public class PlayerInventory : MonoBehaviour
                 maxDamage += item.itemAttributes[i].attributeValue;
             Debug.Log("attack = " + maxDamage);
         }
-        //if (HPMANACanvas != null)
-        //{
-        //    UpdateManaBar();
-        //    UpdateHPBar();
-        //}
+        if (HPMANACanvas != null)
+        {
+            UpdateManaBar();
+            UpdateHPBar();
+        }
     }
 
     public void OnUnEquipItem(Item item)
@@ -276,11 +277,11 @@ public class PlayerInventory : MonoBehaviour
             if (item.itemAttributes[i].attributeName == "Damage")
                 maxDamage -= item.itemAttributes[i].attributeValue;
         }
-        //if (HPMANACanvas != null)
-        //{
-        //    UpdateManaBar();
-        //    UpdateHPBar();
-        //}
+        if (HPMANACanvas != null)
+        {
+            UpdateManaBar();
+            UpdateHPBar();
+        }
     }
 
 
