@@ -227,6 +227,10 @@ Prefab:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 11494140, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
+      propertyPath: statusIndicator
+      value: 
+      objectReference: {fileID: 999649262}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 854e699485b41c045a5c73267d07d9e1, type: 2}
   m_IsPrefabParent: 0
@@ -3546,6 +3550,7 @@ GameObject:
   - 223: {fileID: 999649261}
   - 114: {fileID: 999649260}
   - 114: {fileID: 999649259}
+  - 114: {fileID: 999649262}
   m_Layer: 5
   m_Name: StatusIndicator
   m_TagString: Untagged
@@ -3627,6 +3632,18 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &999649262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999649257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52b3af3f09e49fe4785a31fd7b689d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBarRect: {fileID: 1595263644}
 --- !u!1 &1073404674
 GameObject:
   m_ObjectHideFlags: 0
@@ -5216,14 +5233,14 @@ RectTransform:
   m_GameObject: {fileID: 1595263643}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 46.514168, y: 17.538969, z: 1}
+  m_LocalScale: {x: 1, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 999649258}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 40}
-  m_SizeDelta: {x: -913, y: 5}
+  m_SizeDelta: {x: 0, y: 5}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1595263645
 MonoBehaviour:
