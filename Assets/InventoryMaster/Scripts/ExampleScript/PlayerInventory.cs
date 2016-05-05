@@ -288,6 +288,11 @@ public class PlayerInventory : MonoBehaviour
     public void Damage(float damage)
     {
         currentHealth -= damage;
+        if (HPMANACanvas != null)
+        {
+            UpdateManaBar();
+            UpdateHPBar();
+        }
         if (currentHealth <= 0)
         {
             Debug.Log("KILL PLAYER");
