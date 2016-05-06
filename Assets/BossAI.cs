@@ -6,13 +6,15 @@ public class BossAI : MonoBehaviour {
 
     public Transform target;
     public Rigidbody2D rb;
-    private float timer;
+    float timer;
+    public float cooldown; 
     float speed;
+    public float rotationSpeed;
 	// Use this for initialization
 	void Awake () 
     {
+        timer = cooldown;
         speed = 3;
-        timer = 5;
         rb = GetComponent<Rigidbody2D>();
 	}
 	
@@ -34,16 +36,17 @@ public class BossAI : MonoBehaviour {
             if (timer <= 0)
             {
                 rb.velocity = new Vector2(Random.Range(0, 4), Random.Range(0, 4));
-                timer = 3;
+                timer = cooldown;
                 
             }
         }
         else
         {
             direction.Normalize();
-            rb.velocity += direction * Time.deltaTime;
+            rb.velocity += direction * Time.deltaTime * speed / 2;
         }
-        
+
+        transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
         //if (timer <= 0)
         //{
         //    rb.velocity = new Vector2(Random.Range(0, 4), Random.Range(0, 4));
