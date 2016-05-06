@@ -31,7 +31,7 @@ public class ArrowController : MonoBehaviour {
             Destroy(gameObject);
 
         }
-        else
+        else if (other.tag != "Enemy")
         {
             Destroy(gameObject);
         }
